@@ -1,0 +1,261 @@
+:root {
+  --plava: #3496d8;
+  --tamnoSiva: #8f8f8f;
+  --bela: #fff;
+}
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,900|Slabo+27px");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  font-family: "Slabo 27px", serif;
+  color: var(--tamnoSiva);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/********** HEADER ***********/
+
+header {
+  background: url(img/header.jpg) center center/cover;
+  height: 100vh;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px 0 50px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: var(--bela);
+  text-transform: uppercase;
+  margin-left: 60px;
+}
+
+.logo {
+  color: var(--bela);
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+header hgroup {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+header h2 {
+  font-size: 5rem;
+  text-shadow: 3px 3px 16px black;
+}
+
+header h4 {
+  font-size: 2rem;
+}
+
+header h5 {
+  font-size: 1.1rem;
+  padding-top: 20px;
+}
+/********** INTRODUCTION ***********/
+.introduction img {
+  width: 100%;
+}
+
+.introduction {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+
+.introduction .col {
+  flex: 1;
+}
+
+.introduction .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+}
+
+.introduction h2 {
+  font-size: 3rem;
+  color: var(--plava);
+}
+.introduction p {
+  font-size: 1.1rem;
+  padding: 20px 0;
+}
+.introduction button {
+  width: 200px;
+  background: var(--plava);
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  color: #fff;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+/********** SERVICES ***********/
+.services {
+  padding: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+}
+.services .col {
+  flex: 0 0 30%;
+}
+
+.services h2 {
+  color: var(--plava);
+  padding-bottom: 20px;
+}
+
+.services i {
+  font-size: 3rem;
+  color: var(--plava);
+  padding-bottom: 20px;
+}
+
+.services p {
+  font-size: 1.1rem;
+}
+
+/********** WORKS ***********/
+
+.works h2 {
+  color: var(--plava);
+  text-align: center;
+  font-size: 3rem;
+  padding: 30px;
+}
+
+.works h2 + p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.works .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.works .col {
+  flex: 0 0 32%;
+  border-bottom: 10px solid var(--plava);
+  margin-bottom: 30px;
+  position: relative;
+}
+.works h4 {
+  background: rgba(52, 150, 216, 0.6);
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.2rem;
+  padding: 10px;
+  color: #fff;
+}
+.img1 {
+  background: url(img/works1.jpg) center center/cover;
+  height: 300px;
+}
+.img2 {
+  background: url(img/works2.jpg) center center/cover;
+  height: 300px;
+}
+.img3 {
+  background: url(img/works3.jpg) center center/cover;
+  height: 300px;
+}
+.img4 {
+  background: url(img/works4.jpg) center center/cover;
+  height: 300px;
+}
+.img5 {
+  background: url(img/works5.jpg) center center/cover;
+  height: 300px;
+}
+.img6 {
+  background: url(img/works2.jpg) center center/cover;
+  height: 300px;
+}
+
+/********** FOOTER ***********/
+footer {
+  background: url(img/footer.jpg) center center/cover;
+  height: 500px;
+
+  color: #fff;
+}
+
+footer h2 {
+  font-size: 3rem;
+  color: #fff;
+  border-bottom: 10px solid;
+  display: inline-block;
+  position: relative;
+  top: 10px;
+}
+footer p {
+  margin-top: 30px;
+  color: #fff;
+}
+hr {
+  background: var(--bela);
+  border: none;
+  height: 1px;
+}
+
+footer .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer .row .col {
+  flex: 0 0 50%;
+  font-size: 2rem;
+  padding: 30px;
+}
+footer .row .col:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+footer i {
+  padding: 10px;
+}
+
+footer input {
+  padding: 10px;
+}
+footer button {
+  padding: 12px 25px;
+  background: var(--plava);
+  border: none;
+  color: #fff;
+}
+@media (max-width: 768px) {
+}
