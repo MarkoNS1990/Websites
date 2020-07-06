@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400|Poppins:400,700&display=swap");
+:root {
+  --crna: rgb(16, 24, 32);
+  --zuta: rgb(254, 231, 21);
+  --bela: #fff;
+  --svetloSiva: #e8e2e2;
+  --padding: 100px 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: var(--crna);
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.container::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+/*****************
+nav
+*****************/
+nav {
+  padding: 10px 30px;
+  position: fixed;
+  width: 100%;
+  background-color: var(--crna);
+  opacity: 0.8;
+}
+nav .logo {
+  text-decoration: none;
+  color: var(--zuta);
+}
+nav .logo:hover {
+  color: rgba(255, 255, 255, 0.5);
+  transition: 0.6s ease;
+}
+nav ul {
+  float: right;
+}
+nav ul li {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--bela);
+}
+nav ul li a:hover {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: var(--zuta);
+  transition: 0.6s ease;
+}
+/*****************
+header
+*****************/
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0.1)),
+    url(img/header.jpg) no-repeat center center/cover;
+  height: 100vh;
+  border-bottom: 5px var(--crna) solid;
+}
+
+header h1 {
+  text-align: center;
+  padding-top: 500px;
+  font-size: 2.5rem;
+}
+
+header p {
+  text-align: center;
+}
+/*****************
+intro
+*****************/
+.intro {
+  padding-top: 70px;
+  text-align: center;
+}
+
+.intro h2 {
+  font-size: 2.2rem;
+}
+
+.intro hr {
+  width: 20%;
+  margin: auto;
+  height: 6px;
+  background-color: var(--zuta);
+  border: 1px solid var(--crna);
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.intro p {
+  font-size: 1.2rem;
+}
+/*****************
+services
+*****************/
+.services {
+  padding: 40px;
+}
+
+.services .wrapper {
+  float: left;
+  width: 50%;
+  text-align: center;
+  padding: 30px;
+}
+.services .wrapper:first-child,
+.services .wrapper:nth-child(3) {
+  border-right: 1px dotted var(--crna);
+}
+.services .wrapper:nth-child(3),
+.services .wrapper:nth-child(4) {
+  border-top: 1px dotted var(--crna);
+}
+
+.services h3 {
+  padding: 20px;
+}
+
+.services h4 {
+  padding: 15px;
+}
+
+.services p {
+  line-height: 1.8;
+}
+
+.services i {
+  color: var(--zuta);
+}
+
+.services button {
+  padding: 15px 25px;
+  border: none;
+  background-color: var(--zuta);
+  margin-top: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.services button:hover {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.6s ease;
+}
+
+/*****************
+footer
+*****************/
+footer {
+  background-color: var(--crna);
+  color: var(--bela);
+  text-align: center;
+  padding: 30px;
+}
+/***********************
+R E S P O N S I V E
+***********************/
+@media (max-width: 768px) {
+  nav {
+    position: static;
+  }
+  nav .logo {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+  }
+  nav ul {
+    text-align: center;
+    float: none;
+  }
+  nav ul li {
+    display: block;
+    font-size: 2rem;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+  }
+  nav ul li:last-child {
+    border-bottom: none;
+  }
+  nav ul li a {
+    padding: 5px;
+  }
+
+  header h1 {
+    text-align: center;
+    padding-top: 350px;
+    font-size: 3rem;
+    padding-bottom: 20px;
+  }
+  header p {
+    font-size: 1.3rem;
+  }
+  header {
+    opacity: 0.92;
+    border-bottom: 8px var(--crna) solid;
+    border-top: 8px var(--crna) solid;
+  }
+  .services .wrapper {
+    float: none;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    border-bottom: 1px dotted var(--crna);
+  }
+  .services .wrapper:first-child,
+  .services .wrapper:nth-child(3) {
+    border-right: none;
+  }
+  .services .wrapper:nth-child(3),
+  .services .wrapper:nth-child(4) {
+    border-top: none;
+  }
+}
