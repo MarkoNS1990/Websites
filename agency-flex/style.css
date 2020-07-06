@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,900|Raleway:400,700");
+:root {
+  --pink: #f20f97;
+  --black: #000;
+  --white: #fff;
+  --transition: 0.4s ease;
+  --gray: gray;
+  --lightgray: #f8f8f8;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+/* header */
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(img/header.jpg) center center/cover;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+.logo {
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+}
+.logo span {
+  font-style: italic;
+  font-weight: 700;
+}
+nav ul li a {
+  color: #fff;
+  margin-left: 70px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header hgroup {
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  text-transform: uppercase;
+}
+
+hgroup h4 {
+  font-size: 1.2rem;
+}
+hgroup h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  padding: 20px 0;
+}
+hgroup h5 {
+  font-size: 1.1rem;
+  font-style: italic;
+}
+button {
+  background: transparent;
+  border: 1px solid var(--black);
+  width: 300px;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  margin-top: 30px;
+  border-radius: 30px;
+}
+
+button:hover {
+  background: var(--pink);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+/* about */
+.about {
+  display: flex;
+  padding: 50px 0;
+  flex-wrap: wrap;
+}
+
+.about img {
+  width: 100%;
+  box-shadow: 0 0 20px var(--gray);
+  border-radius: 30px;
+}
+
+.about .col {
+  flex: 1;
+}
+
+.about .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+}
+
+.about h2 {
+  font-size: 3rem;
+  padding-bottom: 20px;
+}
+
+.about h4 {
+  font-size: 1.2rem;
+  padding-bottom: 20px;
+}
+.about hr {
+  height: 2px;
+  background: var(--pink);
+  width: 20%;
+  border: none;
+  margin-bottom: 20px;
+}
+/* counter */
+.counter {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+  justify-content: space-around;
+}
+.counter h2 {
+  font-size: 3rem;
+}
+
+.counter hr {
+  margin: 20px auto;
+  width: 70%;
+}
+/* team */
+.team {
+  padding: 50px 0;
+}
+
+.team .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.team img {
+  width: 100%;
+}
+.team .clean {
+  flex: 5;
+}
+.team .full {
+  flex: 7;
+}
+
+.row .col {
+  display: flex;
+  padding: 50px 0;
+}
+
+.row .col .full {
+  display: flex;
+}
+
+.team .left .text {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  text-align: right;
+  padding: 20px;
+}
+
+.team .left .text hr {
+  height: 2px;
+  background: var(--pink);
+  border: none;
+  width: 70%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  right: -200px;
+}
+.team .right .text hr {
+  height: 2px;
+  background: var(--pink);
+  border: none;
+  width: 70%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  right: 80px;
+}
+.team .text {
+  padding: 20px;
+}
+
+/* services */
+
+/* gallery hgroup */
+
+/* gallery */
+
+/* contact */
+
+/* footer  */
+
+/* bottom-bar  */
+
+@media (max-width: 768px) {
+}
