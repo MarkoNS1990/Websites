@@ -13,11 +13,11 @@ body {
 .container {
   width: 80%;
   margin: auto;
-}
-.container::after {
-  content: "";
-  clear: both;
-  display: block;
+  &::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
 }
 
 @black: #000;
@@ -38,7 +38,7 @@ header {
   height: 60vh;
   border-bottom: 20px solid rgba(0, 0, 0, 0.5);
   h1 {
-    background: var(@black);
+    background: @black;
     display: inline-block;
     color: @white;
     padding: 15px 50px;
@@ -67,18 +67,18 @@ header {
 h2 {
   font-size: 2rem;
   text-align: center;
-  h2::after {
+  &::after {
     display: block;
     content: "";
     width: 80px;
-    background: var(@orange);
+    background: @orange;
     height: 3px;
     margin: 20px auto;
   }
 }
 
 button {
-  background: var(@orange);
+  background: @orange;
   padding: 15px 60px;
   border: none;
   color: @white;
@@ -159,7 +159,7 @@ footer {
   }
   .fab {
     padding: 10px;
-    background: var(@orange);
+    background: @orange;
     color: @white;
     margin: 10px;
   }
@@ -179,7 +179,7 @@ R E S P O N S I V E
   header {
     border-bottom: 10px solid rgba(0, 0, 0, 0.5);
     nav {
-      background: var(@orange);
+      background: @orange;
       display: inline-block;
       padding: 5px;
       margin-left: 10%;

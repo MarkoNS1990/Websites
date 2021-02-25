@@ -58,7 +58,7 @@ header {
   border-bottom: 20px solid rgba(0, 0, 0, 0.5);
 }
 header h1 {
-  background: var(#000);
+  background: #000;
   display: inline-block;
   color: #fff;
   padding: 15px 50px;
@@ -85,16 +85,16 @@ h2 {
   font-size: 2rem;
   text-align: center;
 }
-h2 h2::after {
+h2::after {
   display: block;
   content: "";
   width: 80px;
-  background: var(#ff8a0e);
+  background: #ff8a0e;
   height: 3px;
   margin: 20px auto;
 }
 button {
-  background: var(#ff8a0e);
+  background: #ff8a0e;
   padding: 15px 60px;
   border: none;
   color: #fff;
@@ -171,7 +171,7 @@ footer .fa-heart {
 }
 footer .fab {
   padding: 10px;
-  background: var(#ff8a0e);
+  background: #ff8a0e;
   color: #fff;
   margin: 10px;
 }
@@ -189,7 +189,7 @@ R E S P O N S I V E
     border-bottom: 10px solid rgba(0, 0, 0, 0.5);
   }
   header nav {
-    background: var(#ff8a0e);
+    background: #ff8a0e;
     display: inline-block;
     padding: 5px;
     margin-left: 10%;
